@@ -1,0 +1,37 @@
+html {
+	font-size: 18px;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+.introduction {
+	color: red;
+}
+
+.introduction,
+.outro {
+	font-size: 1.25rem;
+}
+
+ul, ol {
+	font-size: 1.2rem;
+}
+
+ul ul,
+ol ul {
+	font-size: 1rem;
+}
+
+ul.list > li:first-child {
+	font-weight: bold;
+}
+
+li + li + li {
+	color: red;
+}
+
+li:last-child {
+	color: orange;
+}
