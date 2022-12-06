@@ -2,25 +2,124 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Title</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="stylesheet" type="text/css" href="style2.css">
-		<link rel="stylesheet" type="text/css" href="style3.css">
-
-		<title>Dikument</title>
+		<title>Dokument</title>
 		<style>
 			article {
-				border: 1px solid black;
+				border: 3px solid black;
+				padding: 5px;
 			}
+			p {
+				color: red;
+			}
+
+			#introduction, #ending {
+				background-color: #E0E0E0;
+				padding: 3px;
+			}
+
+			#content {
+				color: green;
+				border: 2px solid red;
+				padding: 3px;
+			}
+
+			.chapters-title {
+				font-weight: bold;
+				text-decoration: underline;
+				padding: 3px;
+			}
+
+			.chapter {
+				color: limegreen;
+				border: 2px solid red;
+				padding: 3px;
+			}
+
+			.chapter2 {
+				padding: 3px;
+				background-color: #E0E0E0;
+			}
+
+			.intro  {
+				font-weight: bold;
+				background-color: gold;
+			}
+
+			#comments {
+				background-color: #E0E0E0;
+			}
+
+			.comment {
+				font-style: italic;
+			}
+
+			.comment#comment-best {
+				font-weight: bold;
+			}
+
+			p.comment {
+			/ / font-size: 24 px;
+			}
+
+			ul > li > ul {
+				background-color: red;
+			}
+
+			ul ol {
+				background-color: gold;
+			}
+
 		</style>
 	</head>
 	<body>
 		<article>
 			<h3>Tytuł</h3>
-			<p>Lorem ipsum door sit amet</p>
-			<p>Lorem ipsum door sit amet</p>
+			<p style="color: black">Lorem ipsum door sit amet</p>
+			<p class="comment">Lorem ipsum door sit amet</p>
 			<p>Lorem ipsum door sit amet</p>
 			<p>Lorem ipsum door sit amet</p>
 		</article>
+		<hr>
+		<div id="introduction">Intro - Lorem ipsum dolor sit amet</div>
+		<p id="content">Content = Lorem 1 ipsum dolor sit amet</p>
+		<p id="ending">End - Lorem 2 ipsum dolor sit amet</p>
+		<hr>
+		<h4 class="chapters-title">Page title</h4>
+		<div class="chapter">Content - Lorem imsum dolor sit amet</div>
+		<p class="chapter">Content - Lorem 1 ipsum dolor sit amet</p>
+		<hr>
+		<div class="chapter intro">Introduction - Lorem opsum dolor sit amet</div>
+		<p class="chapter2">Chapter 1 - Lorem 1 ipsum dolor sit amet</p>
+		<p class="chapter2">Chapter 2 - Lorem ipsum dolor sit ametC</p>
+		<hr>
+		<section id="comments" class="container">
+			<article id="comment-best" class="comment">
+				<p>KOmentarz 1 ipsum dolor sit</p>
+			</article>
+			<article class="comment">
+				<p>Komentarz 2 ipsum dolor sit</p>
+			</article>
+		</section>
+		<hr>
+		<ul>
+			<li>Chrystler</li>
+			<li>Buicj</li>
+			<li>
+				Dodge
+				<ul>
+					<li>Charger</li>
+					<li>Viper</li>
+					<li>
+						Inne
+						<ol>
+							<li>Model 1</li>
+							<li>Model 2</li>
+						</ol>
+					</li>
+				</ul>
+			</li>
+		</ul>
 	</body>
 </html>
