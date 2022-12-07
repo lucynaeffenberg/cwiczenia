@@ -11,7 +11,7 @@
 				padding: 5px;
 			}
 			p {
-				color: red;
+				//color: red;
 			}
 
 			#introduction, #ending {
@@ -71,6 +71,53 @@
 				background-color: gold;
 			}
 
+			article header {
+				background-color: green;
+
+			}
+
+			header h1 {
+				text-decoration: underline;
+			}
+
+			p strong {
+				color: red;
+			}
+
+			article p {
+				background-color: #E0E0E0;
+			}
+
+			section article {
+				margin-left: 15px; font-style: italic;
+			}
+
+			section p {
+				border: 2px solid aqua;
+			}
+
+			section > article {
+				background-color: #E0E0E0;
+			}
+
+			section > header {
+				color: red;
+			}
+
+			article > header {
+				color: green;
+				font-weight: bold;
+			}
+
+			article > strong {
+				text-decoration: underline;
+			}
+
+			h2 + p {
+				color: red;
+				font-weight: bold;
+			}
+
 		</style>
 	</head>
 	<body>
@@ -121,5 +168,40 @@
 				</ul>
 			</li>
 		</ul>
+		<hr>
+		<article>
+			<header>
+				<h1>Tytuł artykułu</h1>
+				<p>Autro: <strong>Lucyna</strong></p>
+			</header>
+			<p>Akapit 1</p>
+			<p>Akapit 2</p>
+			<footer>Wszystkie prawa zastrzdżone</footer>
+			<section class="article-comments">
+				<article class="user-comment">
+					<p>Treść komentarza</p>
+				</article>
+			</section>
+		</article>
+		<hr>
+		<section>
+			<article>
+				<header style="background-color: #E0E0E0">Lucyna</header>
+				<p>Komentarz 1 ipsum dolor sit</p>
+			</article>
+			<article>
+				<header style="background-color: #E0E0E0">Michał</header>
+				<p>KOmentarz 2 <strong>ipsum</strong> dolor sit</p>
+			</article>
+		</section>
+		<hr>
+		<section>
+			<h2>CHapter 1</h2>
+			<p>Lorem ipsum</p>
+			<p>Lorem ipsum</p>
+			<p>Lorem ipsum</p>
+			<p>Lorem ipsum</p>
+		</section>
+		<p>Lorem, ipsum dolor</p>
 	</body>
 </html>
