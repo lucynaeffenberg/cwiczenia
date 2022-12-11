@@ -16,7 +16,9 @@
 				color: red;
 			}
 
-			a {font-weight: bold}
+			a {
+				font-weight: bold;
+			}
 
 			input[type="checkbox"]:checked {
 				box-shadow: 0 0 0 3px orange;
@@ -25,6 +27,31 @@
 			input[type="checkbox"]:checked + label {
 				color: red;
 				font-weight: bold;
+			}
+
+			input[type="text"]:disabled {
+				background-color: lightgray;
+				border: 2px solid darkgrey;
+			}
+
+			p:last-child {
+				color: red;
+			}
+
+			tr:nth-child(even) {
+				background-color: lightgreen;
+			}
+
+			tr:nth-child(odd) {
+				background-color: #f2f2f2;
+			}
+
+			td:nth-child(1) {
+				font-weight: bold;
+			}
+
+			table {
+				background-color: lightseagreen;
 			}
 		</style>
 	</head>
@@ -41,5 +68,50 @@
 		<label for="cz">Czechy</label>
 		<input type="checkbox" name="country" id="en">
 		<label for="en">Anglia</label>
+		<hr>
+		<form action="">
+			<p>
+				<label for="fn">Imię</label>
+				<input type="text" name="first_name" id="fn">
+			</p>
+			<p>
+				<label for="sn">Nazwisko</label>
+				<input disabled type="text" name="surname" id="sn">
+			</p>
+		</form>
+		<hr>
+		<div>
+			<p>Lorem ipsum dolor sit amet</p>
+			<p>Lorem ipsum dolor sit amet</p>
+			<p>Lorem ipsum dolor sit amet</p>
+		</div>
+		<hr>
+		<table>
+			<tr>
+				<td>Wiersz 1, Dane</td>
+				<td>2019</td>
+				<td>2020</td>
+			</tr>
+			<tr>
+				<td>Wiersz 2, Ilość</td>
+				<td>10</td>
+				<td>30</td>
+			</tr>
+			<tr>
+				<td>Wiersz 3, Wartość</td>
+				<td>30</td>
+				<td>50</td>
+			</tr>
+			<tr>
+				<td>Wiersz 4, Zapasy</td>
+				<td>2</td>
+				<td>10</td>
+			</tr>
+			<tr>
+				<td>Wiersz 5, Pożyczki</td>
+				<td>0</td>
+				<td>1</td>
+			</tr>
+		</table>
 	</body>
 </html>
