@@ -4,11 +4,28 @@
 		<meta charset="UTF-8">
 		<title>Dokument</title>
 		<style>
+			a:visited {
+				color: green;
+			}
+
+			a:active {
+				color: green;
+			}
+
 			a:hover {
 				color: red;
 			}
 
 			a {font-weight: bold}
+
+			input[type="checkbox"]:checked {
+				box-shadow: 0 0 0 3px orange;
+			}
+
+			input[type="checkbox"]:checked + label {
+				color: red;
+				font-weight: bold;
+			}
 		</style>
 	</head>
 	<body>
@@ -17,5 +34,12 @@
 			<li><a href="#">Kontakt</a></li>
 			<li><a href="#">Blog</a></li>
 		</ul>
+		<hr>
+		<input type="checkbox" name="country" id="pl">
+		<label for="pl">Polska</label>
+		<input type="checkbox" name="country" id="cz">
+		<label for="cz">Czechy</label>
+		<input type="checkbox" name="country" id="en">
+		<label for="en">Anglia</label>
 	</body>
 </html>
