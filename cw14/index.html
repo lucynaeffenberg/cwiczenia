@@ -71,6 +71,23 @@
 			[data-green="dark" i] {
 				background-color: green;
 			}
+
+			[class *= "str"] {
+				background-color: orange;
+			}
+
+			[class ~="small-text"] {
+				font-size: 10px;
+			}
+
+			[class ^="small-text"] {
+				border: 15px solid darkorange;
+			}
+
+			[class $="box"] {
+				padding: 5px;
+				margin: 10px;
+			}
 		</style>
 	</head>
 	<body>
@@ -110,8 +127,8 @@
 		<div class="foO-BAR">zmieniony div</div>
 		<hr>
 		<div data-color>saepe animal commune aliquet intellegebat deseruisse dictumst erat mnesarchum duis</div>
-		<div >saepe animal commune aliquet intellegebat deseruisse dictumst erat mnesarchum duis</div>
-		<div data-green>saepe animal commune aliquet intellegebat deseruisse dictumst erat mnesarchum duis</div>
+		<div class="small-text str box">saepe animal commune aliquet intellegebat deseruisse dictumst erat mnesarchum duis</div>
+		<div data-green="light">saepe animal commune aliquet intellegebat deseruisse dictumst erat mnesarchum duis</div>
 		<p data-color="blue">Lorem ipsum dolor sit amet</p>
 	</body>
 </html>
