@@ -53,6 +53,24 @@
 				border: 2px solid darkgreen;
 				padding: 3px;
 			}
+
+			[data-color] {
+				background-color: red;
+				border: 2px dotted darkred;
+			}
+
+			[data-color="blue"] {
+				background-color: lightskyblue;
+				border: 2px solid darkblue;
+			}
+
+			[data-green="light" i] {
+				background-color: lightgreen;
+			}
+
+			[data-green="dark" i] {
+				background-color: green;
+			}
 		</style>
 	</head>
 	<body>
@@ -90,5 +108,10 @@
 		<p class="Foo-Bar">zmieniony paragraf</p>
 		<p class="fooBar">brak zmian</p>
 		<div class="foO-BAR">zmieniony div</div>
+		<hr>
+		<div data-color>saepe animal commune aliquet intellegebat deseruisse dictumst erat mnesarchum duis</div>
+		<div >saepe animal commune aliquet intellegebat deseruisse dictumst erat mnesarchum duis</div>
+		<div data-green>saepe animal commune aliquet intellegebat deseruisse dictumst erat mnesarchum duis</div>
+		<p data-color="blue">Lorem ipsum dolor sit amet</p>
 	</body>
 </html>
