@@ -67,6 +67,14 @@
 				background-color: lightgreen;
 				color: green;
 			}
+
+			.red {
+				background-color: lightcoral; color: darkred;
+			}
+
+			input:not(.red) {
+				background: lightskyblue;
+			}
 		</style>
 	</head>
 	<body>
@@ -140,5 +148,9 @@
 		<hr>
 		<input type="text" class="red" value="jakiś tekst">
 		<input type="text" class="green" value="jakiś tekst">
+		<hr>
+		<input type="text" class="red" value="jakiś tekst">
+		<input type="text" value="jakis tekst">
+		<input type="text" class="" value="jakiś tekst">
 	</body>
 </html>
