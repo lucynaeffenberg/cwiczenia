@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Title</title>
+		<style>
+			p::first-letter {
+				font-size: 25px;
+			}
+
+			div::first-line {
+				font-weight: bold
+			}
+
+			::selection {
+				color: darkred;
+				background-color: lightcoral;
+			}
+
+			p::before {
+				content: "BEFORE";
+				border: 2px dotted black;
+			}
+
+			ul {
+				list-style-type: none;
+			}
+
+			li::before {
+				content: "> ";
+			}
+
+			.popular-link::after {
+				content: " - HOT!";
+				color: red;
+				font-weight: bold;
+				font-size: 12px;
+			}
+		</style>
+	</head>
+	<body>
+		<p>Lorem ipsum dolor sit amet, consecteutur adipisicing elit. Quia, dignissimos</p>
+		<p>Lorem imsum dolor sit amet, consecteutur adipisicing. Vitae, placeat!</p>
+		<div>Lorem imsum dolor sit amet, consecteutur adipisicing. Incidunt, repellendus?</div>
+		<hr>
+		<p>Lorem ipsum dolor sit amet, consecteutur adipisicing elit. Quia, dignissimos</p>
+		<p>Lorem imsum dolor sit amet, consecteutur adipisicing. Vitae, placeat!</p>
+		<div>Lorem imsum dolor sit amet, consecteutur adipisicing. Incidunt, repellendus?</div>
+		<hr>
+		<p>Lorem ipsum dolor sit amet, consecteutur adipisicing elit. Quia, dignissimos</p>
+		<p>Lorem imsum dolor sit amet, consecteutur adipisicing. Vitae, placeat!</p>
+		<hr>
+		<ul>
+			<li>Element 1</li>
+			<li>Element 2</li>
+			<li>Element 3</li>
+			<li>Element 4</li>
+		</ul>
+		<hr>
+		<ul>
+			<li><a href="#">Strona</a></li>
+			<li><a href="#" class="popular-link">Blog</a></li>
+			<li><a href="#">Kontakt</a></li>
+		</ul>
+	</body>
+</html>
