@@ -53,6 +53,20 @@
 			table {
 				background-color: lightseagreen;
 			}
+			
+			li:nth-child(3n) {
+				color: red;
+			}
+			
+			.red:focus {
+				background-color: lightcoral;
+				color: darkred;
+			}
+
+			.green:focus {
+				background-color: lightgreen;
+				color: green;
+			}
 		</style>
 	</head>
 	<body>
@@ -113,5 +127,18 @@
 				<td>1</td>
 			</tr>
 		</table>
+		<hr>
+		<h4>Lista do zrobienia</h4>
+		<ul>
+			<li>Nauka</li>
+			<li>Zakupy</li>
+			<li>Sport</li>
+			<li>Sprzątanie</li>
+			<li>Naprawy</li>
+			<li>Odpoczynek</li>
+		</ul>
+		<hr>
+		<input type="text" class="red" value="jakiś tekst">
+		<input type="text" class="green" value="jakiś tekst">
 	</body>
 </html>
