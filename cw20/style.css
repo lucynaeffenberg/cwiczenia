@@ -1,0 +1,21 @@
+.blog {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.blog > div {
+	width: calc(25% - 20px - 2px - 30px);
+	margin: 10px;
+	border: 1px solid black;
+	padding: 15px;
+
+}
+
+.blog > div > img {
+	display: block;
+	max-width: 100%;
+}
+
+.blog > div > p {
+	margin-bottom: 0;
+}
