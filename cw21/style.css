@@ -1,0 +1,27 @@
+ul {
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+	justify-content: center;
+}
+
+li {
+	margin-right: 25px;
+}
+
+a {
+	text-decoration: none;
+	background-color: black;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 10px;
+}
+
+a:hover	{
+	background-color: gray;
+}
+
+
+
+
+
