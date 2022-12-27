@@ -1,0 +1,13 @@
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.gallery > img {
+	display: block;
+	width: calc((100% / 3) - 20px);
+	margin: 10px;
+
+	// aspect-ratio: 3/2;
+	// object-fit: cover;
+}
