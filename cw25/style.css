@@ -98,3 +98,41 @@ body {
 	line-height: 0.25;
 	color: silver;
 }
+
+.content {
+	margin-top: 45px;
+}
+
+.content .container {
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.card {
+	display: flex;
+	justify-content: center;
+	column-gap: 25px;
+	margin-top: 25px;
+}
+
+.card:first-child {
+	margin-top: 0;
+}
+
+.card img {
+	border: 1px solid black;
+	background: silver;
+	min-width: 200px;
+	aspect-ratio: 4/3;
+}
+
+.footer	{
+	background: silver;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-top: 50px;
+	text-align: center;
+}
+
