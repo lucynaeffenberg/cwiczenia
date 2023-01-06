@@ -1,0 +1,44 @@
+body {
+	margin: 0;
+	font-family: sans-serif;
+}
+
+.banner	{
+	background: silver;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.banner img {
+	background: black;
+	border: 1px solid black;
+	aspect-ratio: 3/1;
+	display: flex;
+	justify-content: center;
+	width: 400px;
+	margin-top: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.banner p {
+	display: flex;
+	justify-content: center;
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0;
+
+
+}
+
+
+
+
+.footer {
+	background: silver;
+	text-align: center;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
